@@ -19,14 +19,6 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  *
  * @author Anderson
- * <p>
- * In the issue SPR-11829 was introduced support for java.util.Optional for @RequestParam controllers parameters but the
- * @RequestPart was not contemplated with the same feature. When a MVC Controller method parameter is annotated with
- * @RequestPart and is type java.util.Optional if the parameter is not submitted in the request Spring raise the
- * exception: org.springframework.web.multipart.support.MissingServletRequestPartException - "Required request part
- * 'PARAMETER_NAME' is not present."
- * <p>
- * Attached is a github link to a project that demonstrate the bug.
  */
 @SpringBootApplication
 @RestController
